@@ -40,6 +40,12 @@ As we can see New Jersey Nets were the weakest team with the lowest average numb
 
 ### Analyzing relationships between Categorical variables ###
 
+The question is - do teams tend to win more games at home compared to away?
+
+I analysed colums: game_result (Win/Loose) and game_location (Home/Away) using pd.crosstab function.
+
+
+
 
 
 
