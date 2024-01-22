@@ -44,6 +44,31 @@ The question is - do teams tend to win more games at home compared to away?
 
 I analysed colums: game_result (Win/Loose) and game_location (Home/Away) using pd.crosstab function.
 
+game_location         A         H
+game_result                      
+L              0.295556  0.233333
+W              0.204444  0.266667
+
+As we can see teams won at home  and loose away more often. To answer the question with confidence I did also chi2  test:
+For a 2x2 table, Chi-squared greater than about 4 indicates an association. Result is equal to 6.5 so  there is association between location and a score.
+
+***It is better to play at home.*** 
+
+### Analyzing Relationships Between Quantitative Variables ###
+
+The question is - Are teams with higher probability of winning tend to win games by more points?
+
+  Covariance between probability that ech team will win the game and the margin of victory/defeat is equal to 1.37 and that is close to 0. We can expect that there is no relationship between these two values or the relationship is  weak or non-linear.
+  
+  Pearsonr correlation between probability that ech team will win the game and the margin of victory/defeat is equal to 0.45. This means that there is correlation between this two variables. 
+Scatter plot between forecast and point_diff columns ***confirms positive correlation*** between them.
+
+
+![Correlation forecast-point_diff](https://github.com/GrzegorzCiepiel/codecademy_NBA_project/assets/135313652/5bd000e7-47c8-4a94-9262-f6b701393c74)
+
+
+
+### Thank you for reading ###
 
 
 
