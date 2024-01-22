@@ -85,7 +85,10 @@ plt.clf()
 # x-axis. Is there any overlap between the boxes? Does this chart suggest that fran_id and pts are associated?
 # Which pairs of teams, if any, earn different average scores per game?
 
-sns.boxplot(data=nba_2010, x='fran_id', y='pts')
+sns.boxplot(data=nba_2010, x='fran_id', y='pts', palette="rocket" )
+plt.title('Points scored by 5 teams in 2010')
+plt.xlabel('Teams')
+plt.ylabel('Points')
 plt.show()
 plt.clf()
 
@@ -149,6 +152,7 @@ print('Pearsonr correlation between probability that ech team will win the game 
 # make sense?
 
 plt.scatter('forecast', 'point_diff', data=nba_2010)
+plt.title('Forecast and point_diff correlation')
 plt.xlabel('Forecasted Win Prob.')
 plt.ylabel('Point Differential')
 plt.show()
